@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+}
+
+body {
+  background: #464748;
+}
+
+.container {
+  text-align: center;
+  font-family: Open Sans;
+}
+
+.title {
+  font-size: 36px;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.title-second {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 15px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bc1e4a;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #bc1e4a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #db10d1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 10px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.row {
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  width: 375px;
+  height: 608px;
+  background: #22262c;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 194px;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.card__title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 37px;
+}
+
+.card__price::before {
+  content: "$";
+}
+
+.card__price::after {
+  content: " /month";
+  font-size: 30px;
+}
+
+.card__price {
+  font-size: 56px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+.card__price-emty .card__price::after {
+  content: "";
+}
+
+.card__price-emty .card__price::before {
+  content: "";
+}
+
+.list {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 65px;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.list-item {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 243px;
+  height: 54px;
+  background: #22262c;
+  font-size: 18px;
+  color: #ffffff;
+  border: 1px solid #bc1e4a;
+  border-radius: 4px;
+  margin-top: 60px;
+}
+
+#btn_second {
+  margin-top: 137px;
+}
+
+#btn_third {
+  margin-top: 98px;
+}
+
+.btn:hover {
+  background: #bc1e4a;
+}

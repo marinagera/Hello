@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  font-weight: 700;
+  src: url(./fonts/fonts/augustbold-webfont.eot) format("eot"),
+    url(./fonts/fonts/augustbold-webfont.ttf) format("truetype"),
+    url(./fonts/fonts/augustbold-webfont.woff) format("woff"),
+    url(./fonts/fonts/augustbold-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  font-weight: 500;
+  src: url(./fonts/fonts/augustlight-webfont.eot) format("eot"),
+    url(./fonts/fonts/augustlight-webfont.woff) format("woff"),
+    url(./fonts/fonts/augustlight-webfont.woff2) format("woff2");
+}
+
+html {
+  font-size: 15px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+}

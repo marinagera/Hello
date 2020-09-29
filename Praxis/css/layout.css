@@ -1,0 +1,91 @@
+.page-viewport {
+  overflow-x: hidden;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  transition: margin-left 0.2s;
+}
+.layout__sidebar {
+  position: fixed;
+  left: -300px;
+  transition: left 0.2s;
+}
+.layout__main {
+  width: 100vw;
+  min-height: 100vh;
+  background: green;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.layout__open {
+  margin-left: 300px;
+}
+.layout__open .layout__sidebar {
+  left: 0;
+}
+
+.sidebar {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 300px;
+  background-color: #ffffff;
+  height: 100vh;
+  z-index: 10;
+}
+.sidebar__control {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  color: rgba 255, 255, 255, 0.8;
+  background: red;
+  z-index: 1;
+}
+.sidebar:focus {
+  color: rgba 255, 255, 255, 0.9;
+}
+.sidebar:hover {
+  color: rgba 255, 255, 255, 0.9;
+}
+
+.side-menu__link {
+  color: #212529;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 2rem 1 rem 2 rem 30px;
+  position: relative;
+}
+.side-menu__link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.side-menu__link:hover {
+  background-color: rgba 0, 0, 0, 0.05;
+  transition: all 0.2s;
+}
+.side-menu__link:hover::before {
+  transition: all 0.2s;
+  width: 15px;
+}
+.side-menu__item:nth-child(1n) .side-menu__link:hover::before {
+  background-color: orange;
+}
+.side-menu__item:nth-child(2n) .side-menu__link:hover::before {
+  background-color: orange;
+}
+.side-menu__item:nth-child(3n) .side-menu__link:hover::before {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=layout.css.map */

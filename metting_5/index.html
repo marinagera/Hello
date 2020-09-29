@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav nav__expand" id="nav">
+        <button class="button" id="toggle"></button>
+        <ul class="list">
+          <li class="list__item">
+            <a href="" class="list__item_link">Store</a>
+          </li>
+          <li class="list__item">
+            <a href="" class="list__item_link">Home</a>
+          </li>
+          <li class="list__item">
+            <a href="" class="list__item_link">About</a>
+          </li>
+          <li class="list__item">
+            <a href="" class="list__item_link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper"></div>
+    <script>
+      toggle.onclick = () => {
+        nav.classList.toggle("nav__expand");
+      };
+    </script>
+  </body>
+</html>

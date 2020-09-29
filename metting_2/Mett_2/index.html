@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Choose a plan</h2>
+      <h3 class="title-second">
+        <span>Billed monthly </span>
+        <!-- <input type="radio"><input type="radio"></input> -->
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <span> Billed anually</span>
+      </h3>
+      <div class="row">
+        <div class="card">
+          <h3 class="card__title">Starter</h3>
+          <h2 class="card__price"><span>19</span></h2>
+          <ul class="list">
+            <li class="list-item">500 MAUs</li>
+            <li class="list-item">3 projects</li>
+            <li class="list-item">Unlimited guides</li>
+            <li class="list-item">Unlimited flows</li>
+            <li class="list-item">Unlimited branden themes</li>
+            <li class="list-item">Email support</li>
+          </ul>
+          <button class="btn">Choose Plan</button>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">Pro</h3>
+          <h2 class="card__price">99</h2>
+          <ul class="list">
+            <li class="list-item">All starter features, plus:</li>
+            <li class="list-item">Unlimited projects</li>
+            <li class="list-item">Unlimited fully customizable themess</li>
+            <li class="list-item">A dedicated Customer Success Manager</li>
+          </ul>
+          <button class="btn" id="btn_second">Choose Plan</button>
+        </div>
+
+        <div class="card card__price-emty">
+          <h3 class="card__title">Enterprise</h3>
+          <h2 class="card__price">Let’s Talk!</h2>
+          <ul class="list">
+            <li class="list-item">All Pro features</li>
+            <li class="list-item">Unlimited MAUs</li>
+            <li class="list-item">Dedicated environment</li>
+            <li class="list-item">Enterprise account administration</li>
+            <li class="list-item">Premium support and services</li>
+          </ul>
+          <button class="btn" id="btn_third">Choose Plan</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

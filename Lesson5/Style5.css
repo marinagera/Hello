@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  font-weight: 700;
+  src: url(./fonts/augustbold-webfont.woff) format("woff");
+}
+
+html {
+  font-size: 15px;
+  font-family: "My Custom Font", Arial, Helvetica, sans-serif;
+}
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+input,
+button {
+  border: none;
+}
+body {
+  background: #ffffff;
+}
+
+.header {
+  background: #fff;
+  height: 80px;
+}
+
+.main-section {
+  background-color: #fede60;
+  min-height: 300px;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid red;
+}
+
+.section {
+  min-height: 300px;
+}
+
+.header > .content-wrapper {
+}

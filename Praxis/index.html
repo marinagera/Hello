@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/5.6.55/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/bace.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+  </head>
+  <body>
+    <div class="page-viewport">
+      <div class="layout layout_open" id="layout">
+        <div class="layout__sidebar sidebar">
+          <div class="sidebar__content">
+            <ul class="side-menu">
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Home</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Products</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Store</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">Contact Us</a>
+              </li>
+              <li class="side-menu__item">
+                <a href="" class="side-menu__link">About</a>
+              </li>
+            </ul>
+          </div>
+          <button class="sidebar__control" id="sidebarControl">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+        <main class="layout__main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime
+          reiciendis inventore provident eos possimus, assumenda in minus ex
+          asperiores facere iusto neque pariatur excepturi repellat ea quae
+          voluptas? Quam.
+        </main>
+      </div>
+    </div>
+    <script>
+      const sidebarControl = document.querySelector("#sidebarControl");
+      const layout = document.querySelector("#layout");
+      sidebarControl.addEventListener("click", () => {
+        layout.classList.toggle("layout_open");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+$header-height: 60px;
+
+@media screen and (max-width: 992px) {
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .list {
+    height: calc(100vh - 60px);
+    width: 325px;
+    margin-top: $header-height;
+    background: #474646;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    &__item {
+      margin-top: 20px;
+      margin-left: 35px;
+    }
+    &__item:first-child {
+      margin-top: 30px;
+    }
+    &__item:last-child {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      margin-top: 0;
+      margin-left: 0;
+      border-top: 1px solid #ffffff;
+      width: 100%;
+      font-size: 22px;
+      padding-top: 16px;
+      padding-left: 35px;
+    }
+    &__item:last-child::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-35%);
+      background-image: url("../Star\ 1.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .button {
+    visibility: visible;
+    height: 36px;
+    width: 36px;
+    border: 1px solid #ffffff;
+    background: #000000;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
+  }
+
+  .button::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    top: 33.3333%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    bottom: 33.3333%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    transition: all 0.3s;
+  }
+
+  .nav__expand {
+    .list {
+      visibility: visible;
+      transform: translateX(0);
+    }
+    .button {
+      &::after {
+        transform: translateX(-50%) rotate(45deg);
+        top: 50%;
+      }
+      &::before {
+        transform: translateX(-50%) rotate(-45deg);
+        bottom: calc(50% - 1px);
+      }
+    }
+  }
+}
