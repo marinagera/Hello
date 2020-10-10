@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./select.css" />
+  </head>
+  <body>
+    <div class="select">
+      <button class="select__title">Select...</button>
+      <ul class="select__options">
+        <li class="select__item">
+          <button class="select__option">Option 1</button>
+        </li>
+        <li class="select__item">
+          <button class="select__option">Option 2</button>
+        </li>
+        <li class="select__item">
+          <button class="select__option">Option 3</button>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      (function () {
+        const selectElement = document.querySelector(".select");
+        const titelElement = document.querySelector(".select__titel");
+
+        function titleClickHandler() {
+          console.log("Clicked on button");
+          selectElement.classList.toggle("select_active");
+          titelElement.textContent = "TEST";
+        }
+
+        titleElement.addEventListener("click", titleClickHandler);
+      })();
+    </script>
+  </body>
+</html>

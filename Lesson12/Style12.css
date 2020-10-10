@@ -1,0 +1,23 @@
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  box-shadow: 0 4px 0 0 rgb(138, 131, 131);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.btn_success {
+  background-color: yellowgreen;
+}
+.btn:active {
+  box-shadow: 0 1px 0 0 black;
+  transform: translateY(3px);
+}
+.btn:clicked {
+  background-color: red;
+  transform: translateX(300px);
+  transition: all 0.3s;
+}

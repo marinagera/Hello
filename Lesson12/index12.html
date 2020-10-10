@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style12.css" />
+  </head>
+  <body>
+    <button class="btn btn_success my-btn">Click me</button>
+    <input type="text" />
+
+    <script>
+      (function () {
+        const myButton = document.querySelector(".my-btn");
+        myButton.style.left = "0px";
+        myButton.addEventListener("click", function () {
+          const delta = 100;
+          myButton.style.position = "relative";
+          console.log(myButton.style.left);
+          myButton.style.left = parseInt(myButton.style.left) + delta + "px";
+
+          myButton.classList.add("btn_Clicked");
+          myButton.textContent = "Group";
+        });
+
+        myButton.addEventListener("mouseenter", function () {
+          console.log("Mouse Enter");
+        });
+      })();
+
+      (function () {
+        const myButton = document.querySelector ('.btn-success');
+        myButton.textContent = 'Group 1';
+        myButton.style.background ='red';
+        myButton.classList.add('hello-world');
+        myButton.addEventListener('click', function() {
+          console.log('clacked');
+        });
+      })();
+    </script>
+  </body>
+</html>

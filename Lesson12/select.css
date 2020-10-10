@@ -1,0 +1,37 @@
+.select {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  border: 1px solid red;
+}
+.select__title {
+  width: 100%;
+  border: none;
+  background-color: rgb(78, 74, 74);
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+.select__options {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
+.select__option {
+  width: 100%;
+  border: none;
+  background-color: #bdb6b6;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.select_active {
+  opacity: 1;
+  visibility: visible;
+}
