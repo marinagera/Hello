@@ -9,31 +9,52 @@
   <body>
     <div class="select">
       <button class="select__title">Select...</button>
-      <ul class="select__options">
+      <ul class="select__options"> 
         <li class="select__item">
-          <button class="select__option">Option 1</button>
+          <button class="select__option select__option_1">Option 1</button>
         </li>
         <li class="select__item">
-          <button class="select__option">Option 2</button>
+          <button class="select__option select__option_2">Option 2</button>
         </li>
         <li class="select__item">
-          <button class="select__option">Option 3</button>
+          <button class="select__option select__option_3">Option 3</button>
         </li>
       </ul>
     </div>
 
     <script>
       (function () {
-        const selectElement = document.querySelector(".select");
-        const titelElement = document.querySelector(".select__titel");
+        const selectElement = document.querySelector('.select');
+        const titelElement = selectElement.querySelector('.select__title');
+        const button1 = selectElement.querySelector('.select__option_1');
+        const button2 = selectElement.querySelector('.select__option_2');
+        const button3 = selectElement.querySelector('.select__option_3');
+
 
         function titleClickHandler() {
-          console.log("Clicked on button");
-          selectElement.classList.toggle("select_active");
-          titelElement.textContent = "TEST";
+          console.log('Clicked on Button');
+          selectElement.classList.toggle('select_active');
         }
 
-        titleElement.addEventListener("click", titleClickHandler);
+        button1.addEventListener('click', function() {
+          console.log(button1.textContent);
+          titelElement.textContent = button1.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        button2.addEventListener('click', function() {
+          console.log(button2.textContent);
+          titelElement.textContent = button2.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        button3.addEventListener('click', function() {
+          console.log(button3.textContent);
+          titelElement.textContent = button3.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        titelElement.addEventListener('click', titleClickHandler)
       })();
     </script>
   </body>

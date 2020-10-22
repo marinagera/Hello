@@ -1,0 +1,28 @@
+.slideshow {
+  width: 800px;
+  margin: 0 auto;
+  &__viewport {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid green;
+  }
+  &__slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    border: 1px solid aqua;
+  }
+  &__slide {
+    border: 1px solid yellow;
+  }
+}
+.rectangle {
+  background: red;
+  height: 300px;
+  width: 600px;
+}

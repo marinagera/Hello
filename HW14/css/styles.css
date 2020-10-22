@@ -4,15 +4,17 @@
   width: 150px;
   border: 1px solid red;
 }
+
 .select__title {
   width: 100%;
   border: none;
-  background-color: rgb(78, 74, 74);
+  background-color: #4e4a4a;
   color: #ffffff;
   text-align: left;
   height: 30px;
   line-height: 30px;
 }
+
 .select__options {
   opacity: 0;
   visibility: hidden;
@@ -24,6 +26,7 @@
   width: 100%;
   transition: all 0.3s;
 }
+
 .select__option {
   width: 100%;
   border: none;
@@ -38,3 +41,5 @@
   opacity: 1;
   visibility: visible;
 }
+
+/*# sourceMappingURL=styles.css.map */
